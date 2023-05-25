@@ -6,7 +6,7 @@ import {
 	NavigationContainer,
 } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-
+import ChatScreen from '../screens/ChatScreen';
 import NotFoundScreen from '../screens/NotFoundScreen';
 import BottomTabNavigator from './BottomTabNavigator';
 import LinkingConfiguration from './LinkingConfiguration';
@@ -34,6 +34,13 @@ function RootNavigator() {
 			initialRouteName='Root'
 		>
 			<Stack.Screen name='Root' component={BottomTabNavigator} />
+			<Stack.Screen
+				name='chatscreen'
+				component={ChatScreen}
+				options={{
+					headerShown: true,
+				}}
+			/>
 		</Stack.Navigator>
 	);
 }

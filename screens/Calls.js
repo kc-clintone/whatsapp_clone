@@ -1,11 +1,32 @@
-import { StyleSheet } from 'react-native';
-
+import { StyleSheet, FlatList } from 'react-native';
 import { Text, View } from '../components/Theme/Themed';
+import calls from '../assets/data/calls.json';
+import Contacts from '../components/Contacts/Contacts';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
+
+const callHistory = calls;
 
 export default function Calls() {
 	return (
 		<View style={styles.container}>
-			<Text style={styles.title}>Calls</Text>
+			{callHistory ? (
+				<View style={styles.contacts}>
+					<FlatList
+						showsVerticalScrollIndicator={false}
+						style={styles.container}
+						data={calls}
+						renderItem={({ item }) => <Contacts calls={item} />}
+					/>
+				</View>
+			) : (
+				<View style={styles.nocalls}>
+					<MaterialCommunityIcons
+						name='phone-classic-off'
+						style={styles.noCallIcon}
+					/>
+					<Text>All call history will appear here.</Text>
+				</View>
+			)}
 		</View>
 	);
 }
@@ -13,8 +34,22 @@ export default function Calls() {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		alignItems: 'center',
+	},
+	contacts: {
+		paddingVertical: 2,
+		paddingHorizontal: 10,
+	},
+	noCallIcon: {
+		fontSize: 60,
+		color: 'gray',
+		paddingVertical: 15,
+	},
+	nocalls: {
+		width: '100%',
+		height: '100%',
 		justifyContent: 'center',
+		alignSelf: 'center',
+		alignItems: 'center',
 	},
 	title: {
 		fontSize: 20,

@@ -5,6 +5,7 @@
 		"@react-navigation/bottom-tabs": "~6.0.9",
 		"@react-navigation/native": "~6.0.6",
 		"@react-navigation/stack": "~6.0.11",
+		"dayjs": "^1.11.6",
 		"expo": "^45.0.0",
 		"expo-asset": "~8.5.0",
 		"expo-constants": "~13.1.1",

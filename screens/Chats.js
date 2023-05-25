@@ -1,25 +1,16 @@
-import { StyleSheet, ScrollView } from 'react-native';
-
+import { StyleSheet, FlatList } from 'react-native';
+import chats from '../assets/data/chats.json';
 import ChatListItem from '../components/ChatListItem/ChatListItem.js';
 import { Text, View } from '../components/Theme/Themed';
 
 export default function Chats() {
 	return (
-		<ScrollView showsVerticalScrollIndicator={false} style={styles.container}>
-			<ChatListItem />
-			<ChatListItem />
-			<ChatListItem />
-			<ChatListItem />
-			<ChatListItem />
-			<ChatListItem />
-			<ChatListItem />
-			<ChatListItem />
-			<ChatListItem />
-			<ChatListItem />
-			<ChatListItem />
-			<ChatListItem />
-			<ChatListItem />
-		</ScrollView>
+		<FlatList
+			showsVerticalScrollIndicator={false}
+			style={styles.container}
+			data={chats}
+			renderItem={({ item }) => <ChatListItem chats={item} />}
+		/>
 	);
 }
 

@@ -1,0 +1,101 @@
+[
+	{
+		"id": "1",
+		"user": {
+			"id": "u2",
+			"name": "Lukas",
+			"image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/lukas.jpeg",
+			"status": "Hey there, I'm using whatsapp"
+		}
+	},
+	{
+		"id": "2",
+		"user": {
+			"id": "u3",
+			"name": "Daniil Top",
+			"image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg",
+			"status": "Hey there, I'm using whatsapp"
+		}
+	},
+	{
+		"id": "3",
+		"user": {
+			"id": "u4",
+			"name": "Alex",
+			"image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/8.png",
+			"status": "Hey there, I'm using whatsapp"
+		}
+	},
+	{
+		"id": "4",
+		"user": {
+			"id": "u5",
+			"name": "Vlad",
+			"image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/jeff.jpeg",
+			"status": "Hey there, I'm using whatsapp"
+		}
+	},
+	{
+		"id": "5",
+		"user": {
+			"id": "u6",
+			"name": "Elon Musk",
+			"image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/elon.png",
+			"status": "Hey there, I'm using whatsapp"
+		}
+	},
+	{
+		"id": "6",
+		"user": {
+			"id": "u7",
+			"name": "Adrian",
+			"image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/graham.jpg",
+			"status": "Hey there, I'm using whatsapp"
+		}
+	},
+	{
+		"id": "7",
+		"user": {
+			"id": "u8",
+			"name": "Borja",
+			"image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/zuck.jpeg",
+			"status": "Hey there, I'm using whatsapp"
+		}
+	},
+	{
+		"id": "8",
+		"user": {
+			"id": "u9",
+			"name": "Mom",
+			"image": "https://image.shutterstock.com/image-vector/super-mom-hero-superhero-cartoon-600w-720015928.jpg",
+			"status": "Hey there, I'm using whatsapp"
+		}
+	},
+	{
+		"id": "9",
+		"user": {
+			"id": "u9",
+			"name": "Andrei",
+			"image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/4.jpg",
+			"status": "Hey there, I'm using whatsapp"
+		}
+	},
+	{
+		"id": "10",
+		"user": {
+			"id": "u9",
+			"name": "Misha",
+			"image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/biahaze.jpg",
+			"status": "Hey there, I'm using whatsapp"
+		}
+	},
+	{
+		"id": "11",
+		"user": {
+			"id": "u9",
+			"name": "Alina",
+			"image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/7.png",
+			"status": "Hey there, I'm using whatsapp"
+		}
+	}
+]

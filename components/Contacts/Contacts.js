@@ -9,31 +9,21 @@ import relativeTime from 'dayjs/plugin/relativeTime';
 
 dayjs.extend(relativeTime);
 
-export default function ChatListItem({ chats }) {
+export default function Contacts({ calls }) {
 	const navigation = useNavigation();
-	const img = chats.user.image;
+	const img = calls.user.image;
 	return (
-		<TouchableOpacity
-			onPress={() =>
-				navigation.navigate('chatscreen', {
-					id: chats.id,
-					name: chats.user.name,
-				})
-			}
-			style={styles.container}
-		>
-			<Image style={styles.profileImage} source={{ uri: chats.user.image }} />
+		<TouchableOpacity style={styles.container}>
+			<Image style={styles.profileImage} source={{ uri: calls.user.image }} />
 			<View style={styles.userDetails}>
 				<View style={styles.chatDetail}>
 					<Text numberOfLines={1} style={styles.userName}>
-						{chats.user.name}
+						{calls.user.name}
 					</Text>
-					<Text style={styles.lastSeen}>
-						{dayjs(chats.lastMessage.createdAt).fromNow(true)}
-					</Text>
+					<Text style={styles.lastSeen}></Text>
 				</View>
 				<Text numberOfLines={1} style={styles.lastText}>
-					{chats.lastMessage.text}
+					{calls.user.status}
 				</Text>
 			</View>
 			{/*<View style={styles.badge}>

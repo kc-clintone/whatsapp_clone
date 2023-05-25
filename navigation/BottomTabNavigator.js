@@ -74,14 +74,11 @@ export default function BottomTabNavigator() {
 	);
 }
 
-// You can explore the built-in icon families and icons on the web at:
-// https://icons.expo.fyi/
 function TabBarIcon(props) {
 	return <Ionicons size={30} style={{ marginBottom: -3 }} {...props} />;
 }
 
 // Each tab has its own navigation stack, you can read more about this pattern here:
-// https://reactnavigation.org/docs/tab-based-navigation#a-stack-navigator-for-each-tab
 const TabOneStack = createStackNavigator();
 
 function TabOneNavigator() {
@@ -114,13 +111,13 @@ const TabThreeStack = createStackNavigator();
 
 function TabThreeNavigator() {
 	return (
-		<TabTwoStack.Navigator>
-			<TabTwoStack.Screen
+		<TabThreeStack.Navigator>
+			<TabThreeStack.Screen
 				name='Camera'
 				component={Camera}
-				options={{ headerTitle: 'Camera' }}
+				options={{ headerShown: false }}
 			/>
-		</TabTwoStack.Navigator>
+		</TabThreeStack.Navigator>
 	);
 }
 
@@ -128,13 +125,13 @@ const TabFourStack = createStackNavigator();
 
 function TabFourNavigator() {
 	return (
-		<TabTwoStack.Navigator>
-			<TabTwoStack.Screen
+		<TabFourStack.Navigator>
+			<TabFourStack.Screen
 				name='Status'
 				component={Status}
 				options={{ headerTitle: 'Status' }}
 			/>
-		</TabTwoStack.Navigator>
+		</TabFourStack.Navigator>
 	);
 }
 
@@ -142,12 +139,12 @@ const TabFiveStack = createStackNavigator();
 
 function TabFiveNavigator() {
 	return (
-		<TabTwoStack.Navigator>
-			<TabTwoStack.Screen
+		<TabFiveStack.Navigator>
+			<TabFiveStack.Screen
 				name='Settings'
 				component={Settings}
 				options={{ headerTitle: 'Settings' }}
 			/>
-		</TabTwoStack.Navigator>
+		</TabFiveStack.Navigator>
 	);
 }
