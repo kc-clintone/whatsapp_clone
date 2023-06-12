@@ -16,14 +16,15 @@ const styles = StyleSheet.create({
 		flex: 1,
 		alignItems: 'center',
 		justifyContent: 'center',
+		padding: 0.5;
 	},
 	title: {
-		fontSize: 20,
+		fontSize: 19,
 		fontWeight: 'bold',
 	},
 	separator: {
-		marginVertical: 30,
+		marginVertical: 35,
 		height: 1,
-		width: '80%',
+		width: '85%',
 	},
 });

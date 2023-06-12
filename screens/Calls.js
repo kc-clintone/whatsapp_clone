@@ -24,7 +24,7 @@ export default function Calls() {
 						name='phone-classic-off'
 						style={styles.noCallIcon}
 					/>
-					<Text>All call history will appear here.</Text>
+					<Text>All your call history will appear here.</Text>
 				</View>
 			)}
 		</View>
@@ -36,11 +36,11 @@ const styles = StyleSheet.create({
 		flex: 1,
 	},
 	contacts: {
-		paddingVertical: 2,
+		paddingVertical: 2.5,
 		paddingHorizontal: 10,
 	},
 	noCallIcon: {
-		fontSize: 60,
+		fontSize: 65,
 		color: 'gray',
 		paddingVertical: 15,
 	},
